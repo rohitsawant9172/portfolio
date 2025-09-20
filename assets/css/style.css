@@ -2257,3 +2257,10 @@ textarea.form-input::-webkit-resizer {
   text-decoration: none;
   cursor: pointer;
 }
+
+.project-item a {
+  cursor: pointer;       /* ✅ show hand cursor */
+  pointer-events: auto;  /* ✅ allow clicking again */
+  text-decoration: none; /* remove underline */
+  color: inherit;        /* keep text color same */
+}

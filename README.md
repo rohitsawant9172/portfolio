@@ -1,44 +1,66 @@
-# vCard - Personal portfolio
+# Shivani Pawar - UI/UX Designer Portfolio
 
-![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/vcard-personal-portfolio)
-![GitHub stars](https://img.shields.io/github/stars/codewithsadee/vcard-personal-portfolio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/codewithsadee/vcard-personal-portfolio?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-[![YouTube Video Views](https://img.shields.io/youtube/views/SoxmIlgf2zM?style=social)](https://youtu.be/SoxmIlgf2zM)
+A modern, responsive portfolio website showcasing UI/UX design work and projects.
 
-vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
+## 🚀 Live Demo
 
-## Demo
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/shivani1754/portfolio)
 
-![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
-![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
+## ✨ Features
 
-## Prerequisites
+- **Responsive Design** - Works on all devices
+- **Interactive Portfolio** - Click eye icons to view project images
+- **Modern UI/UX** - Clean, professional design
+- **Contact Form** - Integrated Google Sheets form
+- **Project Filtering** - Filter by category (Applications, Web Designs, etc.)
+- **Image Modals** - Full-size project image viewing
 
-Before you begin, ensure you have met the following requirements:
+## 🛠️ Technologies Used
 
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
+- HTML5
+- CSS3
+- JavaScript
+- Ion Icons
+- Google Fonts (Poppins)
 
-## Installing vCard
+## 📱 Project Categories
 
-To install **vCard**, follow these steps:
+- **Applications** - Mobile app designs
+- **Web Designs** - Website layouts and designs
+- **Web Panels** - Admin dashboards and panels
+- **Branding & Designs** - Logos, brochures, and marketing materials
 
-Linux and macOS:
+## 🚀 Deployment
+
+### Deploy to Vercel (Recommended)
+
+1. Fork this repository
+2. Click the "Deploy with Vercel" button above
+3. Connect your GitHub account
+4. Deploy!
+
+### Manual Deployment
 
 ```bash
-sudo git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
+# Clone the repository
+git clone https://github.com/shivani1754/portfolio.git
+
+# Navigate to the directory
+cd portfolio
+
+# Install Vercel CLI
+npm i -g vercel
+
+# Deploy
+vercel
 ```
 
-Windows:
+## 📧 Contact
 
-```bash
-git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
+- **Email:** pawarshivani1754@gmail.com
+- **Phone:** +91 9309586837
+- **Location:** Pune, India
 
-## Contact
+## 📄 License
 
-If you want to contact me you can reach me at [Twitter](https://www.x.com/codewithsadee_).
-
-## License
-
-MIT
+This project is open source and available under the [MIT License](LICENSE).
