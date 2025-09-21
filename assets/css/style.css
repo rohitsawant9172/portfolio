@@ -2210,6 +2210,16 @@ textarea.form-input::-webkit-resizer {
   .image-modal-content img {
     max-height: 70vh;
   }
+  
+  .close {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    z-index: 1001;
+  }
 }
 
 /*-----------------------------------*\
@@ -2242,20 +2252,33 @@ textarea.form-input::-webkit-resizer {
 
 /* Close button */
 .close {
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 35px;
   color: #fff;
-  font-size: 40px;
+  font-size: 20px;
   font-weight: bold;
   cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  z-index: 1001;
 }
 
 .close:hover,
 .close:focus {
-  color: #bbb;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 .project-item a {
