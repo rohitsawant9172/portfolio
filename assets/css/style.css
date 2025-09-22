@@ -227,6 +227,31 @@ article.active {
   animation: fade 0.5s ease backwards;
 }
 
+/* Ensure contact section is properly displayed */
+.contact.active {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Ensure form elements are visible */
+.contact .form {
+  display: block;
+  width: 100%;
+}
+
+.contact .form-input {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.contact .form-btn {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+}
+
 @keyframes fade {
   0% {
     opacity: 0;
@@ -427,8 +452,8 @@ main {
 }
 
 .sidebar-info_more {
-  opacity: 0;
-  visibility: hidden;
+  opacity: 1;
+  visibility: visible;
   transition: var(--transition-2);
 }
 
@@ -923,6 +948,25 @@ main {
   white-space: normal;
 }
 
+.company-info {
+  color: var(--vegas-gold);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-400);
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.company-info a {
+  color: var(--orange-yellow-crayola);
+  text-decoration: none;
+  transition: var(--transition-1);
+}
+
+.company-info a:hover {
+  color: var(--light-gray);
+  text-decoration: underline;
+}
+
 
 /**
  * skills 
@@ -1072,7 +1116,7 @@ main {
   position: relative;
   width: 100%;
   height: 200px;
-  border-radius: 0px;
+  border-radius: 16px;
   overflow: hidden;
   margin-bottom: 15px;
 }
@@ -1276,6 +1320,9 @@ main {
 
 .contact-form {
   margin-bottom: 10px;
+  display: block;
+  visibility: visible;
+  opacity: 1;
 }
 
 .form-title {
@@ -1287,6 +1334,7 @@ main {
   grid-template-columns: 1fr;
   gap: 25px;
   margin-bottom: 25px;
+  width: 100%;
 }
 
 .form-input {
@@ -1297,6 +1345,9 @@ main {
   border: 1px solid var(--jet);
   border-radius: 14px;
   outline: none;
+  display: block;
+  width: 100%;
+  background: var(--eerie-black-1);
 }
 
 .form-input::placeholder {
@@ -1339,6 +1390,8 @@ textarea.form-input::-webkit-resizer {
   box-shadow: var(--shadow-3);
   z-index: 1;
   transition: var(--transition-1);
+  cursor: pointer;
+  border: none;
 }
 
 .form-btn::before {
@@ -2286,4 +2339,125 @@ textarea.form-input::-webkit-resizer {
   pointer-events: auto;  /* ✅ allow clicking again */
   text-decoration: none; /* remove underline */
   color: inherit;        /* keep text color same */
+}
+
+/* Project store links styling */
+.project-container {
+  width: 100%;
+}
+
+.project-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.store-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: var(--transition-1);
+  border: 1px solid transparent;
+}
+
+.android-link {
+  background: #01875f;
+  color: white;
+}
+
+.android-link:hover {
+  background: #016b4a;
+  transform: translateY(-2px);
+}
+
+.ios-link {
+  background: #007AFF;
+  color: white;
+}
+
+.ios-link:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+.store-link ion-icon {
+  font-size: 16px;
+}
+
+/* Responsive store links */
+@media (max-width: 768px) {
+  .project-links {
+    flex-direction: row;
+    gap: 8px;
+    justify-content: center;
+  }
+  
+  .store-link {
+    justify-content: center;
+    padding: 8px 12px;
+    flex: 1;
+    max-width: 120px;
+  }
+}
+
+/* Mobile navbar bottom spacing */
+@media (max-width: 768px) {
+  .navbar {
+    padding-bottom: 00px;
+  }
+  
+  .navbar-list {
+    padding: 0 15px 10px 15px;
+  }
+  
+  .navbar-link {
+    padding: 10px 20px;
+  }
+  
+  /* Responsive profile picture */
+  .avatar-box {
+    height: auto;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .avatar-box img {
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 0;
+  }
+  
+  /* Make Experience always visible on mobile */
+  .sidebar-info_more {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Fix location display on mobile */
+  .contact-info {
+    max-width: calc(100% - 50px);
+    width: calc(100% - 50px);
+  }
+  
+  .contact-info :is(.contact-link, time, address) {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  
+  .contact-title {
+    font-size: 11px;
+    margin-bottom: 4px;
+  }
 }
