@@ -2392,10 +2392,23 @@ textarea.form-input::-webkit-resizer {
 
 /* Responsive store links */
 @media (max-width: 768px) {
+  /* Align name and role to start on mobile */
+  .sidebar-info {
+    align-items: flex-start;
+  }
+  .info-content {
+    text-align: left;
+  }
+  .info-content .name,
+  .info-content .title {
+    text-align: left;
+    margin-left: 0;
+  }
   .project-links {
     flex-direction: row;
     gap: 8px;
-    justify-content: center;
+    justify-content: flex-start; /* Align store icons to start on mobile */
+    padding-left: 5px;
   }
   
   .store-link {
@@ -2407,7 +2420,8 @@ textarea.form-input::-webkit-resizer {
 }
 
 /* Mobile navbar bottom spacing */
-@media (max-width: 768px) {
+@media (max-width: 968px) {
+ 
   .navbar {
     padding-bottom: 00px;
   }
@@ -2423,7 +2437,7 @@ textarea.form-input::-webkit-resizer {
   /* Responsive profile picture */
   .avatar-box {
     height: auto;
-    min-height: 120px;
+    min-height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2431,8 +2445,8 @@ textarea.form-input::-webkit-resizer {
   
   .avatar-box img {
     width: 120px;
-    height: 180px;
-    object-fit: cover;
+    height: 120px;
+    object-fit: contain;
     border-radius: 0;
   }
   
