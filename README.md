@@ -1,4 +1,4 @@
-# Shivani Pawar - UI/UX Designer Portfolio
+# Rohit Sawant - Flutter Developer Portfolio
 
 A modern, responsive portfolio website showcasing UI/UX design work and projects.
 
@@ -39,26 +39,11 @@ A modern, responsive portfolio website showcasing UI/UX design work and projects
 3. Connect your GitHub account
 4. Deploy!
 
-### Manual Deployment
-
-```bash
-# Clone the repository
-git clone https://github.com/shivani1754/portfolio.git
-
-# Navigate to the directory
-cd portfolio
-
-# Install Vercel CLI
-npm i -g vercel
-
-# Deploy
-vercel
-```
 
 ## 📧 Contact
 
-- **Email:** pawarshivani1754@gmail.com
-- **Phone:** +91 9309586837
+- **Email:** rohit.sawant96047@gmail.com
+- **Phone:** +91 9172268905
 - **Location:** Pune, India
 
 ## 📄 License
